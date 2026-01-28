@@ -1,19 +1,22 @@
 /** @format */
 
 import React from "react";
+import { FaCcVisa, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FiFacebook, FiTwitter, FiYoutube } from "react-icons/fi";
+import EtecLogo from "../assets/images/EtecLogo.jpg";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-50 flex flex-col">
+    <div className="bg-gray-900 flex flex-col">
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto px-4 py-11">
+      <footer className="text-gray-300">
+        <div className="w-full md:max-w-6xl lg:max-w-7xl mx-auto px-4 py-11">
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-7">
             {/* Info of company*/}
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src="src/assets/images/EtecLogo.jpg"
+                  src={EtecLogo}
                   alt=""
                   className="w-14 rounded-xl"
                 />
@@ -35,6 +38,7 @@ const Footer = () => {
                 <div>912 Learning Course St, Online City</div>
               </div>
             </div>
+            {/* End of Info of company */}
 
             {/* Quiuk Link */}
             <div className="space-y-4">
@@ -62,6 +66,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            {/* End of Quick Links */}
 
             {/* Categories */}
             <div className="space-y-4">
@@ -89,6 +94,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            {/* End of Categories */}
 
             {/* Support */}
             <div className="space-y-4">
@@ -113,6 +119,7 @@ const Footer = () => {
                   <a href="#">Career</a>
                 </li>
               </ul>
+
               {/* Newsletter */}
               <div className="mt-3">
                 <h4 className="font-bold text-white">
@@ -130,9 +137,53 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            {/* End of Supported */}
           </div>
         </div>
       </footer>
+
+      <div className="border-t border-gray-600 py-4 text-gray-400">
+        <div className="text-sm w-full md:max-w-6xl lg:max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 items-center gap-16">
+          <p>&copy; 2026 Leaning Online. All rights reserved.</p>
+          <ul className="flex items-center space-x-4 text-gray-400">
+            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+              <FiFacebook />
+            </li>
+
+            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+              <FiTwitter />
+            </li>
+
+            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+              <FaInstagram />
+            </li>
+
+            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+              <FaLinkedinIn />
+            </li>
+
+            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+              <FiYoutube />
+            </li>
+          </ul>
+
+          <ul className="flex items-center space-x-4">
+            <h4 className="text-sm text-gray-400">We Accept:</h4>
+
+            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+              VISA
+            </li>
+
+            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+              MC
+            </li>
+
+            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+              AMEX
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
