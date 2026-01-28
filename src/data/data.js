@@ -1,12 +1,12 @@
 /** @format */
-// import Ai_P1 from "../assets/images/AI-P1.jpg"
-// import UxUi_P1 from "../assets/images/UxUi-p1.jpg";
-// import Db_P1 from "../assets/images/Db-P1.jpg";
-// import Flutter_P1 from "../assets/images/Flutter-P1.jpg"
-// import CSharp_P1  from "../assets/images/CSharp-P1.jpg"
-// import NodeJS_P1 from "../assets/images/NodeJs-P1.jpg"
-// import WebAPI_P1 from "../assets/images/WebAPI-P1.jpg"
-// import Api_P1 from "../assets/images/API-P1.jpg"
+import Ai_P1 from "../assets/images/AI-P1.jpg"
+import UxUi_P1 from "../assets/images/UxUi-p1.jpg";
+import Db_P1 from "../assets/images/Db-P1.jpg";
+import Flutter_P1 from "../assets/images/Flutter-P1.jpg"
+import CSharp_P1  from "../assets/images/CSharp-P1.jpg"
+import NodeJS_P1 from "../assets/images/NodeJs-P1.jpg"
+import WebAPI_P1 from "../assets/images/WebAPI-P1.jpg"
+import Api_P1 from "../assets/images/API-P1.jpg"
 
 export const courses = [
   {
@@ -51,7 +51,7 @@ export const courses = [
     price: 79.99,
     rating: 4.2,
     reviews: 9500,
-    image: "",
+    image: Ai_P1,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const courses = [
     price: 89.99,
     rating: 4.6,
     reviews: 9800,
-    image: "",
+    image: UxUi_P1,
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ export const courses = [
     price: 69.99,
     rating: 4.6,
     reviews: 8700,
-    image: "",
+    image: Db_P1,
   },
   {
     id: 7,
@@ -84,7 +84,7 @@ export const courses = [
     price: 79.99,
     rating: 4.7,
     reviews: 11200,
-    image: "",
+    image: Flutter_P1,
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ export const courses = [
     price: 75.99,
     rating: 4.3,
     reviews: 9400,
-    image: "",
+    image: CSharp_P1,
   },
   {
     id: 9,
@@ -106,7 +106,7 @@ export const courses = [
     price: 98.99,
     rating: 4.6,
     reviews: 15000,
-    image: "",
+    image: NodeJS_P1,
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ export const courses = [
     price: 65.99,
     rating: 4.3,
     reviews: 8300,
-    image: "",
+    image: WebAPI_P1,
   },
   {
     id: 11,
@@ -128,6 +128,6 @@ export const courses = [
     price: 89.99,
     rating: 4.4,
     reviews: 10200,
-    image: "",
+    image: Api_P1,
   },
 ];
