@@ -1,5 +1,5 @@
 /** @format */
-import Ai_P1 from "../assets/images/AI-P1.jpg";
+// import Ai_P1 from "../assets/images/AI-P1.jpg"
 import UxUi_P1 from "../assets/images/UxUi-p1.jpg";
 import Db_P1 from "../assets/images/Db-P1.jpg";
 import Flutter_P1 from "../assets/images/Flutter-P1.jpg"
@@ -51,7 +51,7 @@ export const courses = [
     price: 79.99,
     rating: 4.2,
     reviews: 9500,
-    image: Ai_P1,
+    image: "",
   },
   {
     id: 5,
