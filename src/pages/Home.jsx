@@ -4,7 +4,7 @@ import React from "react";
 import { IoIosArrowForward, IoIosTimer } from "react-icons/io";
 import { VscDebugStart } from "react-icons/vsc";
 import Card from "../components/card";
-import { courses } from "../data/data.js";
+import { courses } from "../data/data";
 import { BsPeople } from "react-icons/bs";
 import { TbCertificate2 } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
