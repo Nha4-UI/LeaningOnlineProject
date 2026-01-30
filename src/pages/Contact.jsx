@@ -12,7 +12,6 @@ import { MdAttachEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import Swal from "sweetalert2";
 import groupPic from "../assets/images/Group_P1.jpg";
-import { Repeat } from "lucide-react";
 
 const Contact = () => {
   const formRef = useRef();

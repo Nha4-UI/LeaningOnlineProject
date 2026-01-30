@@ -1,19 +1,20 @@
 /** @format */
-import Ai_P1 from "../assets/images/AI_P1.jpg"
+import Ai_P1 from "../assets/images/AI_P1.jpg";
 import UxUi_P1 from "../assets/images/UxUi_P1.jpg";
 import Db_P1 from "../assets/images/Db_P1.jpg";
-import Flutter_P1 from "../assets/images/Flutter_P1.jpg"
-import CSharp_P1  from "../assets/images/CSharp_P1.jpg"
-import NodeJS_P1 from "../assets/images/NodeJs_P1.jpg"
-import WebAPI_P1 from "../assets/images/WebAPI_P1.jpg"
-import Api_P1 from "../assets/images/API_P1.jpg"
+import Flutter_P1 from "../assets/images/Flutter_P1.jpg";
+import CSharp_P1 from "../assets/images/CSharp_P1.jpg";
+import NodeJS_P1 from "../assets/images/NodeJs_P1.jpg";
+import WebAPI_P1 from "../assets/images/WebAPI_P1.jpg";
+import Api_P1 from "../assets/images/API_P1.jpg";
 
 export const courses = [
   {
     id: 1,
     subtitles: "Development",
     title: "Web Development Bootcamp",
-    description: "Learn full-stack web development from scratch. HTML, CSS, JS, Node.js, and more. Build real-world projects.",
+    description:
+      "Learn full-stack web development from scratch. HTML, CSS, JS, Node.js, and more. Build real-world projects.",
     instructor: "John Deo",
     price: 59.99,
     rating: 4.8,
@@ -24,7 +25,8 @@ export const courses = [
     id: 2,
     subtitles: "Data Science",
     title: "Python for Data Science",
-    description: "Master Python programming and data analysis techniques. Work with libraries like Pandas, NumPy, and Matplotlib.",
+    description:
+      "Master Python programming and data analysis techniques. Work with libraries like Pandas, NumPy, and Matplotlib.",
     instructor: "Jane Smith",
     price: 109.99,
     rating: 4.9,
@@ -35,7 +37,8 @@ export const courses = [
     id: 3,
     subtitles: "Development",
     title: "JavaScript Advanced Concepts",
-    description: "Deep dive into advanced JavaScript topics. Understand closures, prototypes, async programming, and more.",
+    description:
+      "Deep dive into advanced JavaScript topics. Understand closures, prototypes, async programming, and more.",
     instructor: "Mike Johnson",
     price: 99.99,
     rating: 4.4,
@@ -46,7 +49,8 @@ export const courses = [
     id: 4,
     subtitles: "Data Science",
     title: "Complete AI Engineer Bootcamp",
-    description: "Complete AI Engineer Training: Python, NLP, Transformers, LLMs, LangChain, Hugging Face, APIs Bestseller.",
+    description:
+      "Complete AI Engineer Training: Python, NLP, Transformers, LLMs, LangChain, Hugging Face, APIs Bestseller.",
     instructor: "Emily Davis",
     price: 79.99,
     rating: 4.2,
@@ -57,7 +61,8 @@ export const courses = [
     id: 5,
     subtitles: "Design",
     title: "UX/UI Design Fundamentals",
-    description: "Become a UX/UI Designer! Master Mobile and Web Design, User Interface + User Experience (UI/UX Design), HTML, and CSS",
+    description:
+      "Become a UX/UI Designer! Master Mobile and Web Design, User Interface + User Experience (UI/UX Design), HTML, and CSS",
     instructor: "Sarah Lee",
     price: 89.99,
     rating: 4.6,
@@ -68,7 +73,8 @@ export const courses = [
     id: 6,
     subtitles: "Development",
     title: "SQL and Databases Bootcamp",
-    description: "Master SQL, Database Management & Design and learn to work with databases like PostgreSQL, MySQL + more. With Exercises!",
+    description:
+      "Master SQL, Database Management & Design and learn to work with databases like PostgreSQL, MySQL + more. With Exercises!",
     instructor: "Alex Turner",
     price: 69.99,
     rating: 4.6,
@@ -79,7 +85,8 @@ export const courses = [
     id: 7,
     subtitles: "Development",
     title: "Flutter & Dart - The Complete Guide",
-    description: "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps",
+    description:
+      "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps",
     instructor: "Olivia Brown",
     price: 79.99,
     rating: 4.7,
@@ -90,7 +97,8 @@ export const courses = [
     id: 8,
     subtitles: "Development",
     title: "C# Ultimate Masterclass",
-    description: "An organised .NET programming course that will challenge the way you learn the fundamentals of .NET programming.",
+    description:
+      "An organised .NET programming course that will challenge the way you learn the fundamentals of .NET programming.",
     instructor: "William Wilson",
     price: 75.99,
     rating: 4.3,
@@ -101,7 +109,8 @@ export const courses = [
     id: 9,
     subtitles: "Development",
     title: "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
-    description: "Master Node JS & Deno.js, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!",
+    description:
+      "Master Node JS & Deno.js, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!",
     instructor: "kevin Martin",
     price: 98.99,
     rating: 4.6,
@@ -112,7 +121,8 @@ export const courses = [
     id: 10,
     subtitles: "Business",
     title: "Web API for Manager & Business Analyst",
-    description: "Learn how to read a Swagger (OpenAPI) specification. Understand RESTful APIs, endpoints, methods, requests, and responses.",
+    description:
+      "Learn how to read a Swagger (OpenAPI) specification. Understand RESTful APIs, endpoints, methods, requests, and responses.",
     instructor: "William Wilson",
     price: 65.99,
     rating: 4.3,
@@ -123,7 +133,8 @@ export const courses = [
     id: 11,
     subtitles: "IT & Software",
     title: "Mastering API Integrations: From Scratch to Real-Projects",
-    description: "Build real-world REST API integrations using Postman, and popular platforms like GitHub, PayPal, and ERP systems",
+    description:
+      "Build real-world REST API integrations using Postman, and popular platforms like GitHub, PayPal, and ERP systems",
     instructor: "Laura Garcia",
     price: 89.99,
     rating: 4.4,
