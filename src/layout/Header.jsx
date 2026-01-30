@@ -7,6 +7,7 @@ import { LuSettings } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiMenu4Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/eteclogo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -17,11 +18,7 @@ const Header = () => {
         <div className="w-full md:max-w-6xl lg:max-w-7xl mx-auto px-4 md:px-0">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <img
-              src="src/assets/images/EtecLogo.jpg"
-              alt=""
-              className="h-full"
-            />
+            <img src={logo} alt="" className="h-full" />
 
             {/* Nav Links */}
             <div className="hidden md:block">
@@ -88,7 +85,8 @@ const Header = () => {
 
             <div
               className={`h-screen w-2/3 absolute top-16 right-0 backdrop-blur-3xl bg-gray-50/90 shadow-xl md:hidden transition-transform duration-300 ease-in-out 
-                ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
+                ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
+            >
               <ul className="px-3 py-3.5 space-y-1.5">
                 <li className="text-center py-3 font-bold text-3xl text-blue-900">
                   Menu

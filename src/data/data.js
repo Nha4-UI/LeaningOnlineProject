@@ -1,12 +1,12 @@
 /** @format */
-import Ai_P1 from "../assets/images/AI_P1.jpg";
-import UxUi_P1 from "../assets/images/UxUi_P1.jpg";
-import Db_P1 from "../assets/images/Db_P1.jpg";
-import Flutter_P1 from "../assets/images/Flutter_P1.jpg";
-import CSharp_P1 from "../assets/images/CSharp_P1.jpg";
-import NodeJS_P1 from "../assets/images/NodeJs_P1.jpg";
-import WebAPI_P1 from "../assets/images/WebAPI_P1.jpg";
-import Api_P1 from "../assets/images/API_P1.jpg";
+import Ai_P1 from "../assets/images/ai.jpg";
+import UxUi_P1 from "../assets/images/uxui.jpg";
+import Db_P1 from "../assets/images/db.jpg";
+import Flutter_P1 from "../assets/images/flutter.jpg";
+import CSharp_P1 from "../assets/images/csharp.jpg";
+import NodeJS_P1 from "../assets/images/nodejs.jpg";
+import WebAPI_P1 from "../assets/images/webapi.jpg";
+import Api_P1 from "../assets/images/api.jpg";
 
 export const courses = [
   {

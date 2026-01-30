@@ -11,7 +11,7 @@ import {
 import { MdAttachEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import Swal from "sweetalert2";
-import groupPic from "../assets/images/Group_P1.jpg";
+import groupPic from "../assets/images/group.jpg";
 
 const Contact = () => {
   const formRef = useRef();
