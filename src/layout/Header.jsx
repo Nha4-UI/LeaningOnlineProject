@@ -1,13 +1,9 @@
 /** @format */
 
 import React from "react";
-import { HiOutlineHome, HiOutlineInformationCircle } from "react-icons/hi";
-import { IoPersonOutline } from "react-icons/io5";
-import { LuSettings } from "react-icons/lu";
-import { MdOutlineMailOutline } from "react-icons/md";
 import { RiMenu4Line } from "react-icons/ri";
-import { href, Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/noclogo.jpg";
+import { NavLink } from "react-router-dom";
+import noclogo from "../assets/images/noclogo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -25,7 +21,7 @@ const Header = () => {
         <div className="w-full md:max-w-6xl lg:max-w-[93%] mx-auto px-4 md:px-16">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <img src={logo} alt="" className="h-full rounded-lg" />
+            <img src={noclogo} alt="" className="h-full rounded-lg" />
 
             {/* Nav Links */}
             <div className="hidden md:flex md:items-center md:space-x-8">
@@ -58,7 +54,9 @@ const Header = () => {
               className={`h-screen w-2/3 absolute top-16 right-0 backdrop-blur-3xl bg-gray-50/90 shadow-xl md:hidden transition-transform duration-300 ease-in-out 
                 ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
             >
-              <div className="text-center text-2xl font-bold text-cyan-600">Explore</div>
+              <div className="text-center text-2xl font-bold text-cyan-600">
+                Explore
+              </div>
               <div className="px-3 py-3.5 space-y-1.5">
                 {menu.map((m) => (
                   <a
