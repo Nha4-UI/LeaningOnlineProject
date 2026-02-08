@@ -45,27 +45,44 @@ const Header = () => {
             {/* Mobile Menu Icon */}
             <div className="md:hidden h-16 flex items-center">
               <RiMenu4Line
-                className="text-2xl"
+                className="text-2xl cursor-pointer"
                 onClick={() => setMenuOpen(!menuOpen)}
               />
             </div>
 
+            {/* Mobile Menu */}
             <div
-              className={`h-screen w-2/3 absolute top-16 right-0 backdrop-blur-3xl bg-gray-50/90 shadow-xl md:hidden transition-transform duration-300 ease-in-out 
+              className={`fixed top-0 right-0 h-screen w-2/3 bg-gray-50/90 backdrop-blur-3xl shadow-xl md:hidden transform transition-transform duration-300 ease-in-out
                 ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
             >
-              <div className="text-center text-2xl font-bold text-cyan-600">
-                Explore
+              <div className="flex justify-between items-center px-4 py-5 border-b border-gray-200">
+                <span className="text-2xl font-bold text-cyan-600">
+                  Explore
+                </span>
+                <button
+                  className="text-2xl text-gray-700"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  ✕
+                </button>
               </div>
-              <div className="px-3 py-3.5 space-y-1.5">
+
+              <div className="px-3 py-4 space-y-2 flex flex-col">
                 {menu.map((m) => (
-                  <a
+                  <NavLink
                     key={m.label}
-                    href={m.href}
-                    className="flex items-center space-x-3 px-3 py-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-cyan-600 transition-colors duration-200"
+                    to={m.href}
+                    className={({ isActive }) =>
+                      `px-4 py-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-cyan-600 transition-colors duration-200 ${
+                        isActive
+                          ? "bg-blue-100 text-cyan-700 font-semibold"
+                          : ""
+                      }`
+                    }
+                    onClick={() => setMenuOpen(false)} // close menu on click
                   >
-                    <span className="font-medium">{m.label}</span>
-                  </a>
+                    {m.label}
+                  </NavLink>
                 ))}
               </div>
             </div>
