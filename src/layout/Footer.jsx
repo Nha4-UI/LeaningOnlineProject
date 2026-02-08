@@ -3,7 +3,7 @@
 import React from "react";
 import { FaCcVisa, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiFacebook, FiTwitter, FiYoutube } from "react-icons/fi";
-import logo from "../assets/images/noclogo.jpg";
+// import logo from "../assets/images/noclogo.jpg";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src={logo}
+                  // src={logo}
                   alt=""
                   className="w-14 rounded-xl bg-white"
                 />
