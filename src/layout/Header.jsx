@@ -3,7 +3,7 @@
 import React from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-import logo1 from "../assets/images/noclogo.jpg";
+import logo1 from "../assets/images/logo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);

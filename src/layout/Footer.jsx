@@ -3,7 +3,7 @@
 import React from "react";
 import { FaCcVisa, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiFacebook, FiTwitter, FiYoutube } from "react-icons/fi";
-import logo1 from "../assets/images/noclogo.jpg";
+import logo1 from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
