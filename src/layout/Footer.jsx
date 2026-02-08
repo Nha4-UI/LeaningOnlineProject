@@ -3,7 +3,7 @@
 import React from "react";
 import { FaCcVisa, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiFacebook, FiTwitter, FiYoutube } from "react-icons/fi";
-import logo from "../assets/images/noclogo.jpg";
+import logo1 from "../assets/images/noclogo.jpg";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
             {/* Info of company*/}
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <img src={logo} alt="" className="w-14 rounded-xl bg-white" />
+                <img src={logo1} alt="" className="w-14 rounded-xl bg-white" />
                 <span className="font-bold text-xl text-white">
                   NextOnline Course
                 </span>

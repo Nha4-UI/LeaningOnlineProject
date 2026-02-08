@@ -3,7 +3,7 @@
 import React from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/noclogo.jpg";
+import logo1 from "../assets/images/noclogo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
         <div className="w-full md:max-w-6xl lg:max-w-[93%] mx-auto px-4 md:px-16">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <img src={logo} alt="" className="h-full rounded-lg" />
+            <img src={logo1} alt="" className="h-full rounded-lg" />
 
             {/* Nav Links */}
             <div className="hidden md:flex md:items-center md:space-x-8">
