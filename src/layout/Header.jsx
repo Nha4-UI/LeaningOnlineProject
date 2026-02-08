@@ -6,73 +6,44 @@ import { IoPersonOutline } from "react-icons/io5";
 import { LuSettings } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiMenu4Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import logo from "../assets/images/eteclogo.jpg";
+import { href, Link, NavLink } from "react-router-dom";
+import logo from "../assets/images/noclogo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const menu = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Contact", href: "/contact" },
+    { label: "Info", href: "/info" },
+  ];
 
   return (
     <div className="bg-gray-50/70 sticky top-0 z-50 backdrop-blur-3xl ">
       <nav className=" shadow-lg">
-        <div className="w-full md:max-w-6xl lg:max-w-7xl mx-auto px-4 md:px-0">
+        <div className="w-full md:max-w-6xl lg:max-w-[93%] mx-auto px-4 md:px-16">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <img src={logo} alt="" className="h-full" />
+            <img src={logo} alt="" className="h-full rounded-lg" />
 
             {/* Nav Links */}
-            <div className="hidden md:block">
-              <ul className="flex space-x-9">
-                <li>
-                  <Link
-                    to={"/"}
-                    className="flex items-center gap-1.5 text-lg font-medium"
-                  >
-                    <HiOutlineHome className="text-xl" />
-                    Home
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/about"}
-                    className="flex items-center gap-1.5 text-lg font-medium"
-                  >
-                    <IoPersonOutline className="text-xl" />
-                    About
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/services"}
-                    className="flex items-center gap-1.5 text-lg font-medium"
-                  >
-                    <LuSettings className="text-xl" />
-                    Services
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/contact"}
-                    className="flex items-center gap-1.5 text-lg font-medium"
-                  >
-                    <MdOutlineMailOutline className="text-xl" />
-                    Contact
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/info"}
-                    className="flex items-center gap-1.5 text-lg font-medium"
-                  >
-                    <HiOutlineInformationCircle className="text-xl" />
-                    Info
-                  </Link>
-                </li>
-              </ul>
+            <div className="hidden md:flex md:items-center md:space-x-8">
+              {menu.map((m) => (
+                <NavLink
+                  key={m.label}
+                  to={m.href}
+                  className={({ isActive }) =>
+                    `flex items-center space-x-2 border-b-2  transition-all duration-300 ${
+                      isActive
+                        ? " border-b-cyan-600 text-cyan-600 hover:text-cyan-700 hover:border-b-cyan-700"
+                        : "border-b-transparent text-gray-700 hover:text-cyan-600 hover:border-b-cyan-500"
+                    }`
+                  }
+                >
+                  <span className="font-medium">{m.label}</span>
+                </NavLink>
+              ))}
             </div>
 
             {/* Mobile Menu Icon */}
@@ -87,60 +58,18 @@ const Header = () => {
               className={`h-screen w-2/3 absolute top-16 right-0 backdrop-blur-3xl bg-gray-50/90 shadow-xl md:hidden transition-transform duration-300 ease-in-out 
                 ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
             >
-              <ul className="px-3 py-3.5 space-y-1.5">
-                <li className="text-center py-3 font-bold text-3xl text-blue-900">
-                  Menu
-                </li>
-                <li>
-                  <Link
-                    to={"/"}
-                    className="flex items-center gap-3 text-xl font-medium text-gray-800 py-1.5 px-2 hover:bg-gray-200 duration-150 transition-all block"
+              <div className="text-center text-2xl font-bold text-cyan-600">Explore</div>
+              <div className="px-3 py-3.5 space-y-1.5">
+                {menu.map((m) => (
+                  <a
+                    key={m.label}
+                    href={m.href}
+                    className="flex items-center space-x-3 px-3 py-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-cyan-600 transition-colors duration-200"
                   >
-                    <HiOutlineHome className="text-xl" />
-                    Home
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/about"}
-                    className="flex items-center gap-3 text-xl font-medium text-gray-800 py-1.5 px-2 hover:bg-gray-200 duration-150 transition-all block"
-                  >
-                    <IoPersonOutline className="text-xl" />
-                    About
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/services"}
-                    className="flex items-center gap-3 text-xl font-medium text-gray-800 py-1.5 px-2 hover:bg-gray-200 duration-150 transition-all block"
-                  >
-                    <LuSettings className="text-xl" />
-                    Services
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/contact"}
-                    className="flex items-center gap-3 text-xl font-medium text-gray-800 py-1.5 px-2 hover:bg-gray-200 duration-150 transition-all block"
-                  >
-                    <MdOutlineMailOutline className="text-xl" />
-                    Contact
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to={"/info"}
-                    className="flex items-center gap-3 text-xl font-medium text-gray-800 py-1.5 px-2 hover:bg-gray-200 duration-150 transition-all block"
-                  >
-                    <HiOutlineInformationCircle className="text-xl" />
-                    Info
-                  </Link>
-                </li>
-              </ul>
+                    <span className="font-medium">{m.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

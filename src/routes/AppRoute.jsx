@@ -9,6 +9,7 @@ import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Info from "../pages/Info";
 import Notfound from "../pages/Notfound";
+import Detail from "../pages/Detail";
 
 const AppRoute = () => {
   return (
@@ -16,12 +17,13 @@ const AppRoute = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
+          <Route path="/detail/:id" element={<Detail />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/info" element={<Info />} />
         </Route>
-        <Route path="*" element={<Notfound/>}/>
+        <Route path="*" element={<Notfound />} />
       </Routes>
     </>
   );

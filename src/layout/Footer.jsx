@@ -3,11 +3,11 @@
 import React from "react";
 import { FaCcVisa, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiFacebook, FiTwitter, FiYoutube } from "react-icons/fi";
-import EtecLogo from "../assets/images/EtecLogo.jpg";
+import logo from "../assets/images/noclogo.jpg";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 flex flex-col">
+    <div className="bg-cyan-600 flex flex-col">
       {/* Footer */}
       <footer className="text-gray-300">
         <div className="w-full md:max-w-6xl lg:max-w-7xl mx-auto px-4 py-11">
@@ -16,12 +16,12 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src={EtecLogo}
+                  src={logo}
                   alt=""
-                  className="w-14 rounded-xl"
+                  className="w-14 rounded-xl bg-white"
                 />
-                <span className="font-bold text-2xl text-white uppercase">
-                  Etec center
+                <span className="font-bold text-xl text-white">
+                  NextOnline Course
                 </span>
               </div>
               <p className="text-sm">
@@ -129,9 +129,9 @@ const Footer = () => {
                   <input
                     type="email"
                     placeholder="Your email"
-                    className="text-sm bg-gray-800 items-center px-4 py-2 rounded-sm focus:outline-none"
+                    className="text-sm bg-cyan-800 items-center px-4 py-2 rounded-sm focus:outline-none"
                   />
-                  <button className="bg-blue-500 font-bold px-4 py-2 text-sm text-white rounded-sm hover:bg-blue-600 duration-300">
+                  <button className="bg-cyan-500 font-bold px-4 py-2 text-sm text-white rounded-sm hover:bg-cyan-600 duration-300">
                     Subscribe
                   </button>
                 </div>
@@ -142,43 +142,43 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="border-t border-gray-600 py-4 text-gray-400">
-        <div className="text-sm w-full md:max-w-6xl lg:max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 items-center gap-16">
-          <p>&copy; 2026 Leaning Online. All rights reserved.</p>
-          <ul className="flex items-center space-x-4 text-gray-400">
-            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+      <div className="border-t border-slate-400 py-4 text-white">
+        <div className="text-sm px-2 w-full gap-8 text-center md:max-w-6xl lg:max-w-7xl mx-auto grid md:grid-cols-3 md:gap-1 lg:grid-cols-2 xl:grid-cols-3 items-center lg:gap-16">
+          <p>&copy; 2026 NextOnline Courses. All rights reserved.</p>
+          <ul className="flex items-center justify-center space-x-2 lg:space-x-4 text-white">
+            <li className="bg-cyan-800 rounded-full p-3 text-lg md:text-sm lg:text-lg hover:cursor-pointer hover:bg-cyan-900 duration-300">
               <FiFacebook />
             </li>
 
-            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+            <li className="bg-cyan-800 rounded-full p-3 text-lg md:text-sm lg:text-lg hover:cursor-pointer hover:bg-cyan-900 duration-300">
               <FiTwitter />
             </li>
 
-            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+            <li className="bg-cyan-800 rounded-full p-3 text-lg md:text-sm lg:text-lg hover:cursor-pointer hover:bg-cyane-900 duration-300">
               <FaInstagram />
             </li>
 
-            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+            <li className="bg-cyan-800 rounded-full p-3 text-lg md:text-sm lg:text-lg hover:cursor-pointer hover:bg-cyan-900 duration-300">
               <FaLinkedinIn />
             </li>
 
-            <li className="bg-gray-800 rounded-full p-3 text-lg hover:cursor-pointer hover:bg-blue-900 duration-300">
+            <li className="bg-cyan-800 rounded-full p-3 text-lg md:text-sm lg:text-lg hover:cursor-pointer hover:bg-cyan-900 duration-300">
               <FiYoutube />
             </li>
           </ul>
 
-          <ul className="flex items-center space-x-4">
-            <h4 className="text-sm text-gray-400">We Accept:</h4>
+          <ul className="flex items-center justify-center space-x-2 lg:space-x-4">
+            <h4 className="text-sm text-gray-200">We Accept:</h4>
 
-            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+            <li className="bg-cyan-800 rounded-md text-sm md:text-xs lg:text-sm px-3 py-1 font-bold text-white hover:cursor-pointer">
               VISA
             </li>
 
-            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+            <li className="bg-cyan-800 rounded-md text-sm md:text-xs lg:text-sm px-3 py-1 font-bold text-white hover:cursor-pointer">
               MC
             </li>
 
-            <li className="bg-gray-800 rounded-md text-sm px-3 py-1 font-bold text-gray-400 hover:cursor-pointer">
+            <li className="bg-cyan-800 rounded-md text-sm md:text-xs lg:text-sm px-3 py-1 font-bold text-white hover:cursor-pointer">
               AMEX
             </li>
           </ul>
